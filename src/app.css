@@ -1,0 +1,156 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+background-color:#c3bbac ;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  flex-basis: 50%;
+  flex-shrink: 0;
+  border-bottom: 3px #3C493F solid;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4);
+  position: relative;
+}
+
+.list {
+  flex-basis: 50%;
+  word-break: break-all;
+}
+
+.count {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  font-size: 25px;
+}
+
+.item:not(:last-child) {
+  border-bottom: 3px black solid;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.2);
+}
+
+input[type="checkbox"] {
+  margin-right: 15px;
+  height: 35px;
+  width: 35px;
+  clip-path: circle(46% at 50% 50%);
+  filter: saturate();
+  accent-color: rgb(0, 84, 0);
+}
+
+.check,
+button,
+input:hover {
+  cursor: pointer;
+}
+
+input,
+button {
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4);
+}
+
+button {
+  padding: 10px;
+  font-size: large;
+  background-color: #3C493F;
+  color: #ECE2D0;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4);
+}
+
+input {
+  height: 30px;
+  font-size: larger;
+}
+
+.todo {
+  padding: 0px 5px 0px 5px;
+}
+
+.todo,.add-btn,.clear-btn{
+    position: relative;
+    top:15px;
+    
+}
+
+.add-btn{
+    margin: 9px 0px 9px 0px;
+}
+
+.credentials{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  flex-basis: 50%;
+}
+
+.date{
+  text-decoration: underline; 
+  justify-content: center;
+  flex-shrink: 0;
+  display: flex;
+  height:fit-content;
+  position: relative;
+  font-size:medium;
+  margin-left: 10px;
+}
+input::placeholder{
+  font-size: small;
+  color: #3C493F;
+}
+
+.invalid-input{
+  background-color: lightcoral;
+  padding: 15px;
+  font-size:x-large;
+  border-radius: 4px;
+  border: 2px red solid;
+  top:-70px;
+  position:absolute;
+}
+
+.warn{
+  top:20px;
+  background-color: lightcoral;
+  padding: 15px;
+  font-size:x-large;
+  border-radius: 4px;
+  border: 2px red solid;
+  transition: top 0.5s ease-in-out;
+  transition-property: top;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+} 
